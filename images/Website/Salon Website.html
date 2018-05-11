@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)https://www.w3schools.com/w3css/tryw3css_templates_interior_design.htm#packages -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Tisha's Salon and Spa Bar</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="global1.css">
+<link rel="stylesheet" href="global1.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head><body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" 
+style="z-index: 3; width: 300px; font-weight: bold; display: none;" 
+id="mySidebar"><br>
+  
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>"Lil Salon<br>in a Lil Town"</b></h3>
+  </div>
+  
+  <div class="w3-bar-block">
+    <a href="Salon Website.html#home" 
+	onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home
+	</a> 
+    
+	<a href="Salon Website.html#showcase" onclick="w3_close()" 
+	class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
+   
+   <a href="Salon Website.html#services" onclick="w3_close()" 
+	class="w3-bar-item w3-button w3-hover-white">About</a> 
+    
+	<a href="Salon Website.html#designers" onclick="w3_close()" 
+	class="w3-bar-item w3-button w3-hover-white">Designers</a> 
+   
+   <a href="Salon Website.html#packages" onclick="w3_close()"
+	class="w3-bar-item w3-button w3-hover-white">Services</a> 
+   
+   <a href="Salon Website.html#contact" onclick="w3_close()" 
+	class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div><img src = "images/logo.jpg" style = "width: 75%">
+</nav>	
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" 
+  onclick="w3_open()">☰
+  </a>
+  <span>Tisha's Salon and Spa Bar</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: 
+pointer; display: none;" title="close side menu" id="myOverlay">
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Tisha's Salon and Spa Bar</b></h1>
+    <h1 class="w3-xxxlarge w3-text-purple"><b>Showcase.</b></h1>
+    <hr style="width:50px;border:5px solid purple""color:#cc66ff" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/IMG_5015.jpg" style="width:25%" 
+	  onclick="onClick(this)" alt="">
+      <img src="images/IMG_5011.jpg" style="width:25%" 
+	  onclick="onClick(this)" alt="">
+      <img src="images/IMG_5009.jpg" style="width:25%" 
+	  onclick="onClick(this)" alt="">
+    </div>
+
+    <div class="w3-half">
+      <img src="images/IMG_5014.jpg" style="width:25%" 
+	  onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="images/IMG_5012.jpg" 
+	  style="width:25%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="images/IMG_5010.jpg" 
+	  style="width:25%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" 
+  onclick="this.style.display=&#39;none&#39;">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent 
+	w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-purple"><b>About.</b></h1>
+    <hr style="width:50px;border:5px solid purple" class="w3-round">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo 
+	lectus id elit rhoncus, in scelerisque neque tempor. Duis iaculis, tortor 
+	in ultrices auctor, metus tellus pretium velit, sit amet commodo felis ante 
+	a urna.</p>
+    <h3>Hours</h3>
+	<ul>
+	<li>Sunday & Monday - Closed</li>
+	<li>Tuesday - Thursday - 10-7</li>
+	<li>Friday - 10-6</li>
+	<li>Saturday - 9-3</li>
+	</ul>
+	<img src="images/location.png" style="width:100%">
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-purple"><b>Our Team</b></h1>
+    <hr style="width:50px;border:5px solid purple" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-green">
+        <img src="images/ls.jpg" alt="pic1" style="width:75%""height:75%">
+        <div class="w3-container">
+          <h3>Lorem Ipsum</h3>
+          <p class="w3-opacity">CEO &amp; Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+	</div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-purple"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid purple" class="w3-round">
+    <p>Wedding Parties & Birthday Parties Available for booking today!</p>
+	
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Hair</li>
+        <li class="w3-padding-16">Women's Cut - $23.00</li>
+		<li class="w3-padding-16">Men's Cut - $14.00</li>
+		<li class="w3-padding-16">Child's Cut Under 12 - $8.00 - over $12.00</li>
+		<li class="w3-padding-16">Shampoo/Style - $15.00</li>
+		<li class="w3-padding-16">Updo's - $50.00</li>
+		<li class="w3-padding-16">Conditioning treatment/Bonder - $20.00</li>
+		<li class="w3-padding-16">Brazilian Blowout - $150.00</li>
+		<li class="w3-padding-16">Highlights Full Head - $70.00</li>
+		<li class="w3-padding-16">Partial Highlight - $50.00</li>
+		<li class="w3-padding-16">Small Foil, 8 foils or less - $15.00</li>
+		<li class="w3-padding-16">All Over Color Reg. - $50.00</li>
+		<li class="w3-padding-16">Color Retouch - $45.00</li>
+		<li class="w3-padding-16">Full Perm - $55.00</li>
+		<li class="w3-padding-16">Partial Perm - $45.00</li>
+		<li class="w3-padding-16">Eyebrow Wax - $10.00</li>
+		<li class="w3-padding-16">Lip Wax - $6.00</li>
+		<li class="w3-padding-16">Chin - $4.00</li>
+		<li class="w3-padding-16">Eyelash Extensions(Natural Look)-Full Set($100)</li>
+        <li class="w3-padding-16">Eyelash Extension Fills(Double Lash - Volume Mega)
+		2 Weeks($35)/3 weeks($45)</li>
+          <h2></h2>
+          <span class="w3-opacity"></span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Nails</li>
+		<li class="w3-padding-16">Manicure - $15.00
+		French - $3.00 more</li>
+        <li class="w3-padding-16">Gelish - $15.00</li>
+		<li class="w3-padding-16">Acrylics Regular - $45.00</li>
+        <li class="w3-padding-16">P&W-Glitter - $48.00</li>
+		<li class="w3-padding-16">Back Fills - $40.00</li>
+        <li class="w3-padding-16">Regular Fills - $25.00</li>
+		<li class="w3-padding-16">Soak Off - $25.00</li>
+        <li class="w3-padding-16">Paraffin for Hands Extra - $2.00</li>
+		<li class="w3-padding-16">Spa Pedicure - $35.00</li>
+        <li class="w3-padding-16">Express Pedicure - $25.00</li>
+		<li class="w3-padding-16">Polish Change - $10.00</li>
+        <li class="w3-padding-16">Make-up - $50.00</li>
+		<li class="w3-padding-16">Organic Facial - 1 hour($75)/30min($33)</li>
+        <li class="w3-padding-16">5 - 1 hour facials ($300) </li>
+        <li class="w3-padding-16">New Gel tips - no odor</li>
+        <li class="w3-padding-16">
+          <h2></h2>
+          <span class="w3-opacity"></span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-purple"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid purple" class="w3-round">
+    <p>To set up an appointment, please contact us below.</p>
+    <div id = "Contact List" style = font-size:25px;>
+		<ul>
+		<li>(724)-842-2205</li>
+		</ul>
+	</div>
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" 
+style="margin-top:75px;padding-right:58px">
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+
+</body></html>
